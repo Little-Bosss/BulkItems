@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <!--Auction page-->
+    </head>
+
+    <body>
+        <div id="NavigationBar">
+            <table id="NavBarTable">
+                <tr>
+                    <td><a id="linkA" class="homepage" href="MainPage.html">Homepage</a></td>
+                    <td><a id="linkA" class="products" href="Products.html">Products</a></td>
+                    <td><a id="linkA" class="orders" href="Orders.html">Special Orders</a></td>
+                    <td><a id="linkA" class="membership" href="Membership.html">Membership</a></td>
+                    <td><a id="linkA" class="shoppingcart" href="ShoppingCart.html">Shopping Cart</a></td>
+                </tr>
+            </table>
+        </div>
+
+ 
+
+<!---------------NavBar---------------------------------Intro Part-------------------->
+
+<div style="background-color: lightgrey; padding: 2em; margin-top: 0.1em;">
+<div class="form-container" style="background-color: white;">
+    <h1>Special Order Form</h1>
+    <form action="https://formsubmit.co/leoms1112@icloud.com" method="POST">
+        <label for="product">Select Product:</label>
+        <select id="product" name="product">
+            <option value="product0">Please Select</option>
+            <option value="product1">Shoes</option>
+            <option value="product2">Shirts</option>
+            <option value="product3">Socks</option>
+            <option value="product4">Pants</option>
+            <option value="product5">Others (please specify in the last field)</option>
+        </select>
+
+        <label for="country">Manufacturer's Country:</label>
+        <select id="country" name="country">
+            <option value="country0">Please Select</option>
+            <option value="country1">Not relevant</option>
+            <option value="country2">France</option>
+            <option value="country3">Italy</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="manufacturer">Manufacturer (optional):</label>
+        <input type="text" id="manufacturer" name="manufacturer">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="deliveryAddress">Delivery Address:</label>
+        <textarea id="deliveryAddress" name="deliveryAddress" required></textarea>
+
+        <label for="extraInfo">Other relevant Information:</label>
+        <textarea id="extraInfo" name="extraInfo"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</div>
+
+<!---------------NavBar---------------------------------Intro Part-------------------->
+
+       <footer>
+            <div class="footer-section">
+                <h2>About Crisi</h2>
+                <p>Crisiiii is a Belgian based company, operating since 2023. Our main goal is to provide efficient service to retailers.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h2>Customer Care</h2>
+                <ul>
+                  <li><a id="FooterLinks" href="Contact.html">Contact Us</a></li>
+                  <li><a id="FooterLinks" href="FAQ.html">FAQs</a></li>
+                  <li><a id="FooterLinks" href="ShippingReturns.html">Shipping & Returns</a></li>
+                  <li><a id="FooterLinks" href="TermsConditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2>Our Store</h2>
+                <p>We hope opening our first physical location very soon. Until then, enjoy our web store.</p>
+            </div>
+          
+            <div class="footer-section">
+                <h2>Special Requests</h2>
+                <ul>
+                  <li>Rubi.Crisi@gmail.com</li>
+                </ul>
+              </div>
+              <p id="RightsReserved">&copy; 2023 Crisiiii. All rights reserved.</p>
+          </footer> 
+          
+    <script>
+            function validateForm() {
+        var product = document.getElementById("product").value;
+        var country = document.getElementById("country").value;
+        var quantity = document.getElementById("quantity").value;
+        var email = document.getElementById("email").value;
+        var deliveryAddress = document.getElementById("deliveryAddress").value;
+
+        if (product === "product0" || country === "country0" || quantity === "" || email === "" || deliveryAddress === "") {
+            alert("Please fill in all required fields.");
+            return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+    }
+    </script>
+        
+        </body>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #NavBarTable {
+            width: 100%;
+            text-align: center;
+            table-layout: fixed;
+            padding-top: 0.7em;
+            padding-bottom: 0.7em;
+            border: 2px solid lightgrey;
+        }
+
+        .orders {
+            border-bottom: 4px solid black; 
+        }
+
+        #LinkA {
+            text-decoration: none; 
+            color: black; 
+            width: 100%;
+            font-size: 1.5em;
+            padding: 0.5em; 
+            padding-left: 1em; 
+            padding-right: 1em; 
+        }
+
+        #LinkA:hover {
+            background-color: lightgrey;
+			transition: all 0.5s ease;
+            color: white; 
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        footer {
+        background-color: black;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select,
+input[type="number"],
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Additional styling for select elements */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('arrow.png'); /* Replace with your arrow icon */
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* Adjust the arrow icon's size and position */
+select::-ms-expand {
+    display: none;
+}
+
+/* Style the textarea */
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+    /*-------------------------------------------------------------------------------*/
+
+    .footer-section {
+        width: 23%; /* Adjust the width as needed */
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    #FooterLinks {
+        color: white;
+        text-decoration: none;
+    }
+
+    #FooterLinks:hover {
+        text-decoration: underline;
+    }
+
+    #RightsReserved {
+        padding-top: 1.5em;
+        width: 25%; /* Set the width */
+        margin: 0 auto; /* Center horizontally */
+    }
+    </style>
+</html>

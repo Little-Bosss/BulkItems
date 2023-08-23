@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <!--Membership page-->
+    </head>
+
+    <body>
+        <div id="NavigationBar">
+            <table id="NavBarTable">
+                <tr>
+                    <td><a id="linkA" class="homepage" href="MainPage.html">Homepage</a></td>
+                    <td><a id="linkA" class="products" href="Products.html">Products</a></td>
+                    <td><a id="linkA" class="orders" href="Orders.html">Special Orders</a></td>
+                    <td><a id="linkA" class="membership" href="Membership.html">Membership</a></td>
+                    <td><a id="linkA" class="shoppingcart" href="ShoppingCart.html">Shopping Cart</a></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <iframe src="LogInFrame.html" frameborder="0" id="FrameLogIn" class="Frame"></iframe>
+
+        <footer>
+            <div class="footer-section">
+                <h2>About Crisi</h2>
+                <p>Crisiiii is a Belgian based company, operating since 2023. Our main goal is to provide efficient service to retailers.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h2>Customer Care</h2>
+                <ul>
+                  <li><a id="FooterLinks" href="Contact.html">Contact Us</a></li>
+                  <li><a id="FooterLinks" href="FAQ.html">FAQs</a></li>
+                  <li><a id="FooterLinks" href="ShippingReturns.html">Shipping & Returns</a></li>
+                  <li><a id="FooterLinks" href="TermsConditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2>Our Store</h2>
+                <p>We hope opening our first physical location very soon. Until then, enjoy our web store.</p>
+            </div>
+          
+            <div class="footer-section">
+                <h2  style="text-align: left; font-size: 20px; margin-bottom: 10px; text-decoration: none;">Special Requests</h2>
+                <ul>
+                  <li>Rubi.Crisi@gmail.com</li>
+                  <li>+32 476 73 42 39</li>
+                </ul>
+              </div>
+              <p id="RightsReserved">&copy; 2023 Crisiiii. All rights reserved.</p>
+          </footer>
+        
+
+<!---------------NavBar---------------------------------Intro Part-------------------->
+    </body>
+
+    <style>
+                body {
+            margin: 0;
+        } 
+
+        #NavBarTable {
+            width: 100%;
+            text-align: center;
+            table-layout: fixed;
+            padding-top: 0.7em;
+            padding-bottom: 0.7em;
+            border: 2px solid lightgrey;
+        }
+
+        .membership {
+            border-bottom: 4px solid black; 
+        }
+
+        #LinkA {
+            text-decoration: none; 
+            color: black; 
+            width: 100%;
+            font-size: 1.5em;
+            padding: 0.5em; 
+            padding-left: 1em; 
+            padding-right: 1em; 
+        }
+
+        #LinkA:hover {
+            background-color: lightgrey;
+			transition: all 0.5s ease;
+            color: white; 
+        }
+
+        #FrameLogIn {
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+        background-color: black;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+    }
+
+    .footer-section {
+        width: 23%; /* Adjust the width as needed */
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    #FooterLinks {
+        color: white;
+        text-decoration: none;
+    }
+
+    #FooterLinks:hover {
+        text-decoration: underline;
+    }
+
+    #RightsReserved {
+        padding-top: 1.5em;
+        width: 25%; /* Set the width */
+        margin: 0 auto; /* Center horizontally */
+    }
+    </style>
+</html>

@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <!--Membership page - Log In Frame-->
+    </head>
+
+    <body>
+        <div id="FirstDIV">
+            <form action="" class="form">
+                <h1>LOG IN</h1>
+                <input type="email" name="email" class="box" placeholder="Enter Username (email address)">
+                <input type="password" name="password" class="box" placeholder="Enter Password">
+                <input type="submit" value="Log In" id="submit">
+                <p>No account yet? Sign up <a href="SignUpFrame.html" id="Link">here</a>!</p>
+            </form>
+        </div>
+
+<!---------------NavBar---------------------------------Intro Part-------------------->
+    </body>
+
+    <style>
+                body {
+            margin: 0;
+        }
+        
+        #FirstDIV {
+            background-image: url(https://cigen.com.au/wp-content/uploads/2019/04/1124.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+            height: 100%;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 500px;
+            border: 1px solid rgba(0, 0, 0, 0.5); 
+            align-items: center;
+            margin: auto; 
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 1em;
+        }
+
+        .form h1 {
+            color: white; 
+            font-size: 2em;
+            border-bottom: 4px solid rgba(0, 0, 0, 0.5);  
+            margin: 50px;
+        }
+
+        .box {
+            padding: 12px; 
+            margin: 20px;
+            width: 65%;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            background-color:rgba(0, 0, 0, 0.5);
+            box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 1em; 
+        }
+
+        #submit {
+            padding: 10px 20px;
+            margin-top: 50px;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+            color: white; 
+            border: none;
+            outline: none; 
+            border-radius: 20px; 
+            font-size: 1em;
+        }
+
+        #submit:hover {
+            cursor: pointer;
+            background-color:rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        ::placeholder {
+            color: white;
+            opacity: 0.7;
+        }
+
+        p {
+            color: white; 
+            padding-top: 1em;
+            font-size: 20; 
+        }
+
+        #Link {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #Link:hover {
+            color: lightgrey;
+        }
+    </style>
+</html>
